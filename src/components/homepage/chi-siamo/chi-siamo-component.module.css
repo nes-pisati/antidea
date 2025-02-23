@@ -1,0 +1,25 @@
+.name {
+    font-size: 10rem;
+    margin: 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #525252;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile {
+        margin-top: calc(var(--padding-x)*2);
+    }
+
+    .name {
+        font-size: 4rem;
+        line-height: 1.1;
+    }
+    
+    .description {
+        font-size: 0.9rem;
+    }
+}

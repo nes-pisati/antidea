@@ -1,0 +1,12 @@
+.projectsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    .projectsContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
