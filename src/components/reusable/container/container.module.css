@@ -1,0 +1,9 @@
+.container {
+    padding: var(--padding-x);
+}
+
+.title {
+    font-size: 1.7rem;
+    color: var(--color-red);
+    font-weight: 500;
+}

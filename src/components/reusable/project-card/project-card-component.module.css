@@ -1,0 +1,71 @@
+.cardContainer {
+    grid-template-columns: 1;
+    height: 60vh;
+    border-radius: 20px;
+    padding: var(--padding-x);
+    box-sizing: border-box;
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    bottom: 6%;
+    transition: opacity 0.5s ease;
+}
+
+.title {
+    font-size: 8rem;
+    margin: 0;
+}
+
+.description {
+    margin: 0;
+    color: var(--color-red);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cardContainer:hover {
+    opacity: 1;
+}
+
+.cardContainer:hover .textContainer {
+    opacity: 0.4;
+}
+
+.cardContainer:hover .image {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
+    .cardContainer {
+        height: 50vh;
+        padding: var(--padding-x);
+    }
+
+    .title {
+        font-size: 6rem;
+    }
+
+    .description {
+        margin: 0;
+        padding-bottom: var(--padding-x);
+        font-size: 1rem;
+    }
+}
