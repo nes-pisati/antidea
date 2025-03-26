@@ -30,7 +30,7 @@
 }
 
 .title {
-    font-size: 8rem;
+    font-size: 8.5rem;
     margin: 0;
 }
 
@@ -51,6 +51,11 @@
 
 .cardContainer:hover .image {
     transform: scale(1.2);
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (max-width: 600px) {
