@@ -1,0 +1,46 @@
+.mainContainer {
+    background-image: url(https://res.cloudinary.com/dssajrpzl/image/upload/v1740929003/antidea/_BAN6362_vera_verit%C3%A0_h7vfpv.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    padding: 3%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    z-index: 150;
+}
+
+.logo {
+    width: 15%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        padding: 8%;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    .containerFooter {
+        display: block;
+    }
+
+    .btn {
+        display: none;
+    }
+}
