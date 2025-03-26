@@ -1,0 +1,63 @@
+.containerFirstText {
+    padding: var(--padding-x);
+    width: 70%;
+}
+
+.missionVisionTeam {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.padding {
+    padding-top: 3%;
+}
+
+.chiSiamo {
+    display: grid;
+    gap: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.watch {
+    display: flex;
+    gap: 7%
+}
+
+.watchText {
+    font-size: 1.7rem;
+    width: 60vw;
+    margin: 0;
+}
+
+.videoBtnMobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .missionVisionTeam, .watch, .chiSiamo {
+        display: flex;
+       flex-direction: column;
+    }
+
+    .padding {
+        padding-top: 0;
+    }
+
+    .watchText {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .videoBtnMobile {
+        display: block;
+        padding-top: 2rem;
+    }
+}
