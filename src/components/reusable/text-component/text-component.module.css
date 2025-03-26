@@ -1,9 +1,33 @@
-.text{
+.textBig{
     font-size: 3rem;
 }
 
+.textMedium {
+    font-size: 2rem;
+}
+
+.textSmall {
+    font-size: 1.3rem;
+}
+
+.textXSmall {
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 600px) {
-    .text {
-        font-size: 2rem;
+    .textBig {
+        font-size: 1.8rem;
+    }
+
+    .textMedium{
+        font-size: 1rem;
+    }
+
+    .textSmall {
+        font-size: 1rem;
+    }
+
+    .textXSmall {
+        font-size: 0.8rem;
     }
   }
