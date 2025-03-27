@@ -17,8 +17,8 @@
 .containerFooter {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    height: auto;
+    align-items: baseline;
+    height: 5vh;
     z-index: 150;
 }
 

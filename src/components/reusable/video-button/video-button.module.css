@@ -1,0 +1,34 @@
+.container {
+    padding: 0.8rem 2rem;
+    max-height: 5rem;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    width: 17rem;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    color: var(--color-red);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.dialog {
+    width: 90vw;
+    height: 90vh;
+    background-color: black !important;
+    color: white;
+}
+
+.container :hover {
+    cursor: pointer;
+}
