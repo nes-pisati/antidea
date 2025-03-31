@@ -78,7 +78,7 @@ export default function ProjectComponent() {
                     <VideoButton />
                 </div>
             </Container>
-            <Container title={"Altri progetti"}>
+            <Container title={"Altri progetti"} color={'white'}>
                 <div className={Styles.projects}>
                     {param.projectName === 'rebels' ? 
                     <ProjectCard title={"Kilis"} description={"Siria"} background={KilisBg} /> :
