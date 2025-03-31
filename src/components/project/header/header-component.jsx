@@ -6,9 +6,13 @@ import VideoButton from "../../reusable/video-button/video-button";
 import { Link } from 'react-router-dom';
 
 
-export default function Header({title, description}) {
+export default function Header({title, description, bgImage}) {
+    const style = {
+        backgroundImage: `url(${bgImage})`
+      };
+
     return (
-        <div className={Styles.mainContainer}>
+        <div className={Styles.mainContainer} style={style}>
             <div className={Styles.container}>
                 <Link to={"/"}>
                     <img src={Logo} alt="Logo Antidea" className={Styles.logo} />

@@ -1,5 +1,6 @@
 .mainContainer {
-    background-image: url(https://res.cloudinary.com/dssajrpzl/image/upload/v1740929003/antidea/_BAN6362_vera_verit%C3%A0_h7vfpv.png);
+    /* background-image: url(https://res.cloudinary.com/dssajrpzl/image/upload/v1740929003/antidea/_BAN6362_vera_verit%C3%A0_h7vfpv.png); */
+    /* backgroundImage: `url(${content.bgImage})`; */
     background-size: cover;
     background-position: center;
     width: 100vw;
