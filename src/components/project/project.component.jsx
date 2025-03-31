@@ -10,6 +10,7 @@ import RebelsBg from "../../../src/assets/rebels-card.png";
 import ProjectCard from "../reusable/project-card/project-card-component";
 import ChiSiamo from "../reusable/chi-siamo/chi-siamo-component";
 import VideoButton from "../reusable/video-button/video-button";
+import Carousel from "./carousel/carousel-component";
 import { rebels, kilis } from "../../assets/content";
 import { useParams } from "react-router-dom";
 
@@ -31,7 +32,7 @@ export default function ProjectComponent() {
 
     return (
         <>
-            <Header title={content.title} description={content.location} />
+            <Header title={content.title} description={content.location} bgImage={content.bgImage}/>
             <div className={Styles.videoBtnMobile}>
                 <Container>
                     <VideoButton />
@@ -46,6 +47,7 @@ export default function ProjectComponent() {
             <Container>
                 <TextComponent text={content.description} dimension={"small"} />
             </Container>
+            <Carousel images={[content.imageOne, content.imageTwo]}/>
             <div className={Styles.missionVisionTeam}>
                 <Container title={"La nostra mission"} color={"white"}>
                     <div className={Styles.padding}>
