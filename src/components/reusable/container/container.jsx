@@ -1,7 +1,7 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Styles from "./container.module.css"
 
-export default function Container({title, children, color}) {
+const Container = forwardRef(({ title, children, color }, ref) => {
 
     let colorClass;
 
@@ -17,9 +17,11 @@ export default function Container({title, children, color}) {
     }
 
     return(
-        <div className={Styles.container}>
+        <div ref={ref} className={Styles.container}>
             <p className={`${Styles.title} ${colorClass}`}>{title}</p>
             {children}
         </div>
     )
-}
+})
+
+export default Container;

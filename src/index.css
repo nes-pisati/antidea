@@ -3,6 +3,7 @@
 :root {
   --color-red: #FF0000;
   --padding-x: 4vw;
+  --padding-x-small: 2vw;
 }
 
 body {
@@ -10,4 +11,12 @@ body {
   background-color: black;
   color: white;
   font-family: 'Satoshi', sans-serif;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+html {
+  scroll-behavior: smooth;
 }

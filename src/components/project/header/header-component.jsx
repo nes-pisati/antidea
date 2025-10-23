@@ -4,6 +4,7 @@ import Logo from "../../../assets/logo.svg"
 import ProjectInfos from "../../reusable/project-infos/project.infos-component"
 import VideoButton from "../../reusable/video-button/video-button";
 import { Link } from 'react-router-dom';
+import TopbarMenu from "../../reusable/topbar-menu/topbar-menu.component";
 
 
 export default function Header({title, description, bgImage}) {
@@ -14,9 +15,7 @@ export default function Header({title, description, bgImage}) {
     return (
         <div className={Styles.mainContainer} style={style}>
             <div className={Styles.container}>
-                <Link to={"/"}>
-                    <img src={Logo} alt="Logo Antidea" className={Styles.logo} />
-                </Link>
+                <TopbarMenu />
                 <div className={Styles.containerFooter}>
                     <div>
                         <ProjectInfos title={title} description={description} />
