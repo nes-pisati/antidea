@@ -8,6 +8,7 @@ import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 
 import 'primereact/resources/themes/lara-light-indigo/theme.css'; 
 import 'primereact/resources/primereact.min.css'; 
+import Article from './pages/Article';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path='/rebels' element={<Project />} />
           <Route path='/project/:projectName' element={<Project />} />
+          <Route path='/article/:title' element={<Article />} />
         </Routes>
       </BrowserRouter>
     </PrimeReactProvider>
