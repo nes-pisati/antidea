@@ -1,5 +1,5 @@
 .nameB {
-    font-size: 10rem;
+    font-size: 5rem;
     margin: 0;
 }
 
@@ -33,6 +33,7 @@
 @media screen and (max-width: 600px) {
     .mobile {
         margin-top: 0;
+        margin-bottom: calc(var(--padding-x)*2);
     }
 
     .nameB {

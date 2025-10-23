@@ -65,9 +65,9 @@ export default function ProjectComponent() {
                 <Container title={"Il nostro team"} color={"white"}>
                     {/* <div className={[Styles.padding, Styles.chiSiamo]}> */}
                     <div className={`${Styles.chiSiamo} ${Styles.padding}`}>
-                        <ChiSiamo name={"Paolo Guarnieri"} jobtitle={"Fotografo e Videomaker"} color={"red"} size={"small"} />
+                        <ChiSiamo name={"Paolo Guarneri"} jobtitle={"Fotografo e Videomaker"} color={"red"} size={"small"} />
                         <ChiSiamo name={"Matteo Raineri"} jobtitle={"Videomaker"} color={"red"} size={"small"} />
-                        <ChiSiamo name={"Paolo Guarnieri"} jobtitle={"Fotografo e Videomaker"} color={"red"} size={"small"} />
+                        <ChiSiamo name={"Paolo Guarneri"} jobtitle={"Fotografo e Videomaker"} color={"red"} size={"small"} />
                     </div>
 
                 </Container>

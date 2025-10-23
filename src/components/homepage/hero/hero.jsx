@@ -11,9 +11,6 @@ export default function Hero() {
                 <div className={Styles.antidea}>
                     <img src={logo} alt="logo antidea" className={Styles.logo}/>
                 </div>
-                <div className={Styles.discovermore}>
-                    <p>Scopri di più</p>
-                </div>
             </div>
         </>
     )

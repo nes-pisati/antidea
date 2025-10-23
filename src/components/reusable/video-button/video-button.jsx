@@ -13,7 +13,7 @@ export default function VideoButton() {
             <button className={Styles.container} onClick={() => setVisible(true)}>
                 <div className={Styles.elements}>
                     <FontAwesomeIcon icon={faCirclePlay} className={Styles.icon} />
-                    <p>Guarda il documentario</p>
+                    Guarda il documentario
                 </div>
             </button>
 
