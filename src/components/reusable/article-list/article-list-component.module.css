@@ -1,0 +1,19 @@
+.projectsContainer{
+    position: relative;
+    width: 100%;
+    margin: var(--padding-x) 0 0 0;
+    height: auto;
+    display: flex;
+    gap: var(--padding-x-small);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer e Edge legacy */
+    display: flex;
+    scroll-behavior: smooth;
+}
