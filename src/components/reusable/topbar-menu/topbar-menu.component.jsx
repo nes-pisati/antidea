@@ -11,7 +11,7 @@ export default function TopbarMenu() {
 
     return (
         <div className={Styles.container}>
-            <Link to={"/"}>
+            <Link to={"/"} className={Styles.logoContainer}>
                 <img src={Logo} alt="Logo Antidea" className={Styles.logo} />
             </Link>
             <ul>
