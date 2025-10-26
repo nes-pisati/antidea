@@ -17,3 +17,7 @@
     display: flex;
     scroll-behavior: smooth;
 }
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+  }
