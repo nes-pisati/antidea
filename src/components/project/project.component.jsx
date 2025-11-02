@@ -11,16 +11,19 @@ import ProjectCard from "../reusable/project-card/project-card-component";
 import ChiSiamo from "../reusable/chi-siamo/chi-siamo-component";
 import VideoButton from "../reusable/video-button/video-button";
 import Carousel from "./carousel/carousel-component";
-import { rebels, kilis } from "../../assets/content";
 import { useParams } from "react-router-dom";
+import { contents } from "../../assets/_content";
 
 export default function ProjectComponent() {
     const [isFooterVisible, setIsFooterVisible] = useState(false);
     const param = useParams();
 
-    const content = param.projectName === 'rebels' ? rebels : kilis
+    const content = contents.find(c => c.title.toLowerCase() === param.projectName.toLowerCase());
+    const otherProjects = contents.filter(c => c.title.toLowerCase() != param.projectName.toLowerCase());
 
     useEffect(() => {
+        console.log("otherProjects ->", otherProjects);
+        
         const footer = document.querySelector("#footer");
         const observer = new IntersectionObserver(([entry]) => {
             setIsFooterVisible(entry.isIntersecting)
@@ -32,7 +35,7 @@ export default function ProjectComponent() {
 
     return (
         <>
-            <Header title={content.title} description={content.location} bgImage={content.bgImage}/>
+            <Header title={content.title} description={content.location} bgImage={content.bgImage} />
             <div className={Styles.videoBtnMobile}>
                 <Container>
                     <VideoButton />
@@ -47,7 +50,7 @@ export default function ProjectComponent() {
             <Container>
                 <TextComponent text={content.description} dimension={"small"} />
             </Container>
-            <Carousel images={[content.imageOne, content.imageTwo]}/>
+            <Carousel images={content.images} />
             <div className={Styles.missionVisionTeam}>
                 <Container title={"La nostra mission"} color={"white"}>
                     <div className={Styles.padding}>
@@ -80,9 +83,10 @@ export default function ProjectComponent() {
             </Container>
             <Container title={"Altri progetti"} color={'white'}>
                 <div className={Styles.projects}>
-                    {param.projectName === 'rebels' ? 
-                    <ProjectCard title={"Kilis"} description={"Siria"} background={KilisBg} /> :
-                    <ProjectCard title={"Rebels"} description={"Bangladesh"} background={RebelsBg} /> 
+                    {
+                        otherProjects.map(project => {
+                            return <ProjectCard title={project.title} description={project.location} background={project.bgImage} /> 
+                        })
                     }
                 </div>
             </Container>

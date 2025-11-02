@@ -1,6 +1,6 @@
 .cardContainer {
     grid-template-columns: 1;
-    height: 60vh;
+    height: 75vh;
     border-radius: 20px;
     padding: var(--padding-x);
     box-sizing: border-box;
@@ -30,8 +30,10 @@
 }
 
 .title {
-    font-size: 8.5rem;
+    font-size: 8rem;
     margin: 0;
+    line-height: 1;
+    margin-bottom: 1rem;
 }
 
 .description {
