@@ -20,9 +20,9 @@ export default function Header({title, description, bgImage}) {
                     <div>
                         <ProjectInfos title={title} description={description} />
                     </div>
-                    <div className={Styles.btn}>
+                    {/* <div className={Styles.btn}>
                         <VideoButton />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

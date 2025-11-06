@@ -5,8 +5,6 @@ import TextComponent from "../../components/reusable/text-component/text-compone
 import Gradient from "../reusable/gradient/gradient-component";
 import Container from "../reusable/container/container";
 import Footer from "../reusable/footer/footer-component";
-import KilisBg from "../../../src/assets/kilis-card.png";
-import RebelsBg from "../../../src/assets/rebels-card.png";
 import ProjectCard from "../reusable/project-card/project-card-component";
 import ChiSiamo from "../reusable/chi-siamo/chi-siamo-component";
 import VideoButton from "../reusable/video-button/video-button";
@@ -36,11 +34,11 @@ export default function ProjectComponent() {
     return (
         <>
             <Header title={content.title} description={content.location} bgImage={content.bgImage} />
-            <div className={Styles.videoBtnMobile}>
+            {/* <div className={Styles.videoBtnMobile}>
                 <Container>
                     <VideoButton />
                 </Container>
-            </div>
+            </div> */}
             <div className={Styles.containerFirstText}>
                 <TextComponent text={content.subtitle} dimension={"small"} />
             </div>
@@ -70,7 +68,6 @@ export default function ProjectComponent() {
                     <div className={`${Styles.chiSiamo} ${Styles.padding}`}>
                         <ChiSiamo name={"Paolo Guarneri"} jobtitle={"Fotografo e Videomaker"} color={"red"} size={"small"} />
                         <ChiSiamo name={"Matteo Raineri"} jobtitle={"Videomaker"} color={"red"} size={"small"} />
-                        <ChiSiamo name={"Paolo Guarneri"} jobtitle={"Fotografo e Videomaker"} color={"red"} size={"small"} />
                     </div>
 
                 </Container>
@@ -78,7 +75,7 @@ export default function ProjectComponent() {
             <Container>
                 <div className={Styles.watch}>
                     <p className={Styles.watchText}>{content.closingText}</p>
-                    <VideoButton />
+                    {/* <VideoButton /> */}
                 </div>
             </Container>
             <Container title={"Altri progetti"} color={'white'}>
