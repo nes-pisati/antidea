@@ -33,6 +33,12 @@
   justify-content: space-between;
 }
 
+.image {
+  width: 50vw;
+  border-radius: 20px;
+  margin: 2% 0;
+}
+
 .logo {
   width: 15%;
 }

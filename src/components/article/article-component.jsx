@@ -40,15 +40,12 @@ export default function ArticleComponent() {
                 <div className={Styles.textWrapper}>
                     <TextComponent text={article.secondaryText} dimension={"small"} />
                 </div>
-            </Container>
 
-            <Carousel images={article.images} />
+                <img src={article.cardImg} className={Styles.image} />
 
-            <Container>
                 <div className={Styles.textWrapper}>
                     <TextComponent text={article.closingText} dimension={"small"} />
                 </div>
-
             </Container>
 
             <Container title={"Blog"} deletePaddingX={true}>

@@ -21,6 +21,6 @@ export const articles = [
         images: [
             pensieriVerticaliImg
         ],
-        closingText: "INAUGURAZIONE MOSTRA: Mercoledì 12 Novembre 2025 - ore 17.00 c/o Palazzo Averoldi, Via Moretto, 12. Brescia (BS) - Ingresso Libero"
+        closingText: "15 NOVEMBRE ORE 16.30 - Sala Teatro Grande, Brescia: anteprima proiezione “The Last Days” Prodotto da Antidea: regia di Matteo Sandrini e Paolo Guarneri | 15 NOVEMBRE ORE 10.00-15.00 e 16 NOVEMBRE ORE 10.00-20.00 - RIDOTTO DEL TEATRO GRANDE: Mostra Fotografica \"Il ghiacciaio dell’Adamello nelle fotografie di Michele Gusmeri.\""
     },
 ]
