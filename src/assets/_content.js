@@ -56,7 +56,7 @@ export const contents = [
             rebel9,
             rebel10
         ],
-        mission: "Dimostrare che i matrimoni infantili sono superabili attraverso l’istruzione, ladeterminazione e il coraggio. Utilizzare il documentario come strumento per aumentarela consapevolezza e raccogliere fondi mirati, supportando efficacemente le donne e leorganizzazioni che le assistono, e promuovendo un cambiamento sostenibile nellasocietà.",
+        mission: "Dimostrare che i matrimoni infantili sono superabili attraverso l’istruzione, ladeterminazione e il coraggio. Utilizzare il documentario come strumento per aumentarela consapevolezza e raccogliere fondi mirati, supportando efficacemente le donne e leorganizzazioni che le assistono, e promuovendo un cambiamento sostenibile nella società.",
         vision: "Antidea. Un’idea prima dell’idea. Lampo. Intuizione. O un’idea contro l’idea. Contro l’idea consueta, contro il luogo comune. O, ancora, davanti alla dea, senza incertezza di fronte a ogni liturgia, a ogni devozione o convenienza. Antidea racconterà storie prima, contro e davanti. Le storie di tutti, semplici, a volte nascoste. Vere. Sempre.",
         closingText: "REBELS è il racconto della vita di queste donne — di Minoti, oggi ingegnera e docente universitaria, di sua nipote Lipika, e di tutte le altre ribelli che, ogni giorno, continuano a combattere per la libertà di scegliere il proprio destino."
     },
