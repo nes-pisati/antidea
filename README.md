@@ -23,4 +23,3 @@ ANTIDEA is an institutional project where my dual background in Brand Strategy a
 ## 👤 Author
 **Vanessa Pisati** - Junior Frontend Developer
 * [LinkedIn](https://www.linkedin.com/in/nes-pisati)
-* [Portfolio](INSERISCI_IL_TUO_LINK)
