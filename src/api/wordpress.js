@@ -33,10 +33,10 @@ function mapEvento(wp) {
         title: wp.title?.rendered || '',
         cardSubtitle: acf.cardsubtitle || '',
         cardImg: wp._embedded?.['wp:featuredmedia']?.[0]?.source_url || acf.locandina || '',
-        mainText: acf.testo_principale || '',
-        secondaryText: acf.testo_secondario || '',
+        mainText: acf.maintext || '',
+        secondaryText: acf.descrizione || '',
         images: acf.locandina ? [acf.locandina] : [],
-        closingText: acf.testo_sotto_locandina || ''
+        closingText: acf.closingtext || ''
     }
 }
 
