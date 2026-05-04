@@ -11,6 +11,7 @@ import VideoButton from "../reusable/video-button/video-button";
 import Carousel from "./carousel/carousel-component";
 import { useParams } from "react-router-dom";
 import { getProgetto, getProgetti } from "../../api/wordpress";
+import Spinner from "../reusable/spinner/spinner";
 
 export default function ProjectComponent() {
     const [isFooterVisible, setIsFooterVisible] = useState(false);
@@ -48,7 +49,7 @@ export default function ProjectComponent() {
         return () => observer.disconnect();
     }, []);
 
-    if (loading) return <div style={{ color: 'white', padding: '2rem' }}>Caricamento...</div>;
+    if (loading) return <Spinner />;
     if (!content) return <div style={{ color: 'white', padding: '2rem' }}>Progetto non trovato.</div>;
 
     return (

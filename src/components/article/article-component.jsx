@@ -6,6 +6,7 @@ import Container from "../reusable/container/container";
 import TopbarMenu from "../reusable/topbar-menu/topbar-menu.component";
 import ArticleCard from "../reusable/article-card/article-card.component";
 import { getEventi } from "../../api/wordpress";
+import Spinner from "../reusable/spinner/spinner";
 
 export default function ArticleComponent() {
     const { title } = useParams();
@@ -31,7 +32,7 @@ export default function ArticleComponent() {
         fetchData();
     }, [title]);
 
-    if (loading) return <div style={{ color: 'white', padding: '2rem' }}>Caricamento...</div>;
+    if (loading) return <Spinner />;
     if (!article) return <div style={{ color: 'white', padding: '2rem' }}>Articolo non trovato.</div>;
 
     const style = {
