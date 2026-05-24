@@ -1,5 +1,12 @@
 .containerFirstText {
     padding: var(--padding-x);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtitle {
     width: 70%;
 }
 
@@ -38,9 +45,17 @@
 }
 
 @media screen and (max-width: 600px) {
-    .missionVisionTeam, .watch, .chiSiamo {
+
+    .missionVisionTeam,
+    .watch,
+    .chiSiamo,
+    .containerFirstText {
         display: flex;
-       flex-direction: column;
+        flex-direction: column;
+    }
+
+    .containerFirstText {
+        align-items: flex-start;
     }
 
     .padding {
@@ -59,5 +74,10 @@
     .videoBtnMobile {
         display: block;
         padding-top: 2rem;
+    }
+
+    .subtitle {
+        margin-bottom: 2rem;
+
     }
 }

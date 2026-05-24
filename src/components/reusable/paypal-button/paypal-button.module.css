@@ -17,12 +17,83 @@
 }
 
 .dialog {
-    width: 90vw;
-    height: 90vh;
+    width: 40vw;
+    max-width: 500px;
+    height: auto;
     background-color: black !important;
     color: white;
 }
 
 .container :hover {
     cursor: pointer;
+}
+
+.ctaContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.ctaLogo {
+    width: 1rem;
+    height: auto;
+}
+
+.ctaTitle {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+}
+
+.ctaText {
+    font-size: 1rem;
+    color: #cccccc;
+    max-width: 400px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.ctaLink {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 2.5rem;
+    background-color: var(--color-red);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.ctaLink:hover {
+    background-color: #cc0000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .dialog {
+        width: 90vw;
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .ctaContent {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .ctaTitle {
+        font-size: 1.4rem;
+    }
+
+    .ctaText {
+        font-size: 0.9rem;
+    }
 }
