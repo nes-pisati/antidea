@@ -28,6 +28,21 @@ export default function YoutubeVideo({ url, title = "Video" }) {
 
     const videoId = getVideoId(url);
 
+    function sendCommand(func, args = []) {
+        iframeRef.current?.contentWindow?.postMessage(
+            JSON.stringify({ event: "command", func, args }),
+            "*"
+        );
+    }
+
+    function disableCaptions() {
+        const delays = [0, 400, 1200, 2500];
+        delays.forEach(delay => setTimeout(() => {
+            sendCommand("unloadModule", ["captions"]);
+            sendCommand("unloadModule", ["cc"]);
+        }, delay));
+    }
+
     useEffect(() => {
         const container = containerRef.current;
         if (!container || !videoId) return;
@@ -36,15 +51,9 @@ export default function YoutubeVideo({ url, title = "Video" }) {
             if (entry.isIntersecting) {
                 setShouldLoad(true);
                 // se l'iframe è già montato riprende la riproduzione
-                iframeRef.current?.contentWindow?.postMessage(
-                    JSON.stringify({ event: "command", func: "playVideo", args: [] }),
-                    "*"
-                );
+                sendCommand("playVideo");
             } else {
-                iframeRef.current?.contentWindow?.postMessage(
-                    JSON.stringify({ event: "command", func: "pauseVideo", args: [] }),
-                    "*"
-                );
+                sendCommand("pauseVideo");
             }
         }, { threshold: 0.5 });
 
@@ -61,6 +70,7 @@ export default function YoutubeVideo({ url, title = "Video" }) {
         controls: "0",      
         disablekb: "1",     
         iv_load_policy: "3",
+        cc_load_policy: "0",
         rel: "0",
         loop: "1",
         playlist: videoId,  
@@ -78,7 +88,7 @@ export default function YoutubeVideo({ url, title = "Video" }) {
                         className={Styles.iframe}
                         src={src}
                         title={title}
-                        frameBorder="0"
+                        onLoad={disableCaptions}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
                     />
