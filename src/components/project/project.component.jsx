@@ -84,6 +84,7 @@ export default function ProjectComponent() {
                     <div className={`${Styles.chiSiamo} ${Styles.padding}`}>
                         <ChiSiamo name={"Paolo Guarneri"} jobtitle={"Fotografo e Videomaker"} color={"red"} size={"small"} />
                         <ChiSiamo name={"Matteo Raineri"} jobtitle={"Videomaker"} color={"red"} size={"small"} />
+                        <ChiSiamo name={"Chiara Venegoni"} jobtitle={"Fotografa e Videomaker"} color={"red"} size={"small"} />
                     </div>
                 </Container>
             </div>

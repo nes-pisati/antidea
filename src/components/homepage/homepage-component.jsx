@@ -63,10 +63,6 @@ export default function HomepageComponent() {
                 <ChiSiamo name={"Paolo Guarneri"} jobtitle={"Fotografo e Videomaker"}/>
                 <ChiSiamo name={"Matteo Sandrini"} jobtitle={"Videomaker e Editor"}/>
                 <ChiSiamo name={"Chiara Venegoni"} jobtitle={"Fotografa e Videomaker"}/>
-                <ChiSiamo name={"Matteo Raineri"} jobtitle={"Videomaker e Editor"}/>
-                <ChiSiamo name={"Tommaso Ruggeri"} jobtitle={"Sound designer e Compositore"}/>
-                <ChiSiamo name={"Margherita Marzaduri"} jobtitle={"Editor"}/>
-                <ChiSiamo name={"Damiano Targhettini"} jobtitle={"Graphic Designer"}/>
             </Container>
             <Container ref={blogRef} id="blog" title={"Blog"} deletePaddingX={true}>
                 <ArticleList />
