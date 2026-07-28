@@ -12,7 +12,7 @@ export default function PaypalButton() {
             <button className={Styles.container} onClick={() => setVisible(true)}>
                 <div className={Styles.elements}>
                     <img src={PayPalLogo} alt="paypal-logo"/>
-                    Supporta Ant*dea
+                    Supporta Ant°dea
                 </div>
             </button>
 
@@ -25,7 +25,7 @@ export default function PaypalButton() {
                 closable={true}>
                 <div className={Styles.ctaContent}>
                     <img src={PayPalLogo} alt="paypal-logo" className={Styles.ctaLogo} />
-                    <h2 className={Styles.ctaTitle}>Supporta Ant*dea</h2>
+                    <h2 className={Styles.ctaTitle}>Supporta Ant°dea</h2>
                     <p className={Styles.ctaText}>
                         Il tuo contributo ci aiuta a portare avanti il progetto. Grazie di cuore!
                     </p>

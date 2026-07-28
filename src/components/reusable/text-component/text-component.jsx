@@ -24,9 +24,10 @@ export default function TextComponent({ text, dimension }) {
 
     return (
         <div>
-            <p className={textClass}>
-                {text}
-            </p>
+            <div
+                className={textClass}
+                dangerouslySetInnerHTML={{ __html: text ?? "" }}
+            />
         </div>
     )
 }
