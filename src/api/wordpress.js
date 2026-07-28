@@ -19,6 +19,7 @@ function mapProgetto(wp) {
         maintext: acf.maintext || '',
         description: acf.descrizione || '',
         images,
+        videoUrl: acf.video_youtube || '',
         mission: acf.mission || '',
         vision: "Antidea. Un'idea prima dell'idea. Lampo. Intuizione. O un'idea contro l'idea. Contro l'idea consueta, contro il luogo comune. O, ancora, davanti alla dea, senza incertezza di fronte a ogni liturgia, a ogni devozione o convenienza. Antidea racconterà storie prima, contro e davanti. Le storie di tutti, semplici, a volte nascoste. Vere. Sempre.",
         closingText: acf.testo_conclusivo || ''

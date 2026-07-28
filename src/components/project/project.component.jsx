@@ -13,6 +13,7 @@ import { useParams } from "react-router-dom";
 import { getProgetto, getProgetti } from "../../api/wordpress";
 import Spinner from "../reusable/spinner/spinner";
 import PaypalButton from "../reusable/paypal-button/paypal-button";
+import YoutubeVideo from "../reusable/youtube-video/youtube-video";
 
 export default function ProjectComponent() {
     const [isFooterVisible, setIsFooterVisible] = useState(false);
@@ -61,6 +62,9 @@ export default function ProjectComponent() {
                     <TextComponent text={content.subtitle} dimension={"small"} />
                 </div>
                 <PaypalButton />
+            </div>
+            <div className={Styles.videoContainer}>
+                <YoutubeVideo url={content.videoUrl} title={content.title} />
             </div>
             <Container>
                 <TextComponent text={content.maintext} dimension={"big"} />
